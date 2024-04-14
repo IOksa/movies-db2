@@ -1,0 +1,15 @@
+@use "styles/shared";
+
+.logo {
+  padding: 1rem;
+  height: 10vmin;
+  pointer-events: none;
+  filter: invert(1);
+
+  @media (max-width: shared.$max-mobile-width) {
+    & {
+      height: 5vmin;
+    }
+  }
+}
+
